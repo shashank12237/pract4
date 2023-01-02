@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+var op;
+function reg()
+{
+    var n=document.getElementById("t1").value;
+    var e=document.getElementById("e1").value;
+    var a=document.getElementById("adr").value;
+    op="name is "+n+" email is "+e+"<br>"+"adress is "+a;
+    document.getElementById("mydiv").innerHTML+=op;
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to iacsd</h1>
+    <div>
+        we will see registration form
+    </div>
+    <form >
+       Name <input type="text" id="t1"><br><br>
+       Email <input type="email" id="e1"><br><br>
+       Address <textarea id="adr" rows="6" cols="20"></textarea>
+       <button type="button" id="btn" onclick="reg()">submit</button>
+    </form>
+    <div id="mydiv"></div>
+</body>
+</html>
